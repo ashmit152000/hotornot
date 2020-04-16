@@ -1,0 +1,25 @@
+<div align="center">
+<h1>Who is hotter ?</h1>
+
+<div>
+<%= image_tag(@user1.image, style: "width: 400px; height: 400px"  , :id => "#{@user1.id}", :class => "images one") if current_user.image.attached? %>
+
+ <div class="select selected_one"><%= @user1.email%> is hotter for you </div>
+
+
+
+<span class="or">or</span>
+
+<%= image_tag(@user2.image, style: "width: 400px; height: 400px"  , :id => "#{@user2.id}", :class => "images second") %>
+
+<div class="select selected_two"><%= @user2.email%> is hotter for you </div>
+
+
+
+</div>
+
+</div>
+
+
+
+
